@@ -68,21 +68,23 @@
 
   <child />
   <User/>
-  <ul>
-  <li ></li>
-  </ul>
+  <h1 :class="{homeGreen: true}">Home Component</h1>
+
+
 
 </template>
 <script>
 import child from './child.vue'
 import User from './User.vue'
+
 export default {
 
     name: "HomePage",
     email :"tanvi@gmail.com",
     components:{
         child,
-        User
+        User,
+    
     },
     data(){
         return {
@@ -146,5 +148,10 @@ export default {
 <style scoped>
  h1{
     color:orange
+ }
+
+.homeGreen{
+    background-color:green;
+    width:200px;
  }
 </style>
