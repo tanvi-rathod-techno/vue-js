@@ -5,6 +5,7 @@
     <Student name="Tanvi"/>
     <Teacher name="Tanvi Rathod"/>
 
+    <SimpleForm />
     <h1>Ref in Vue</h1>
     <input type="text" ref="input">
     <button v-on:click="getdata()">Ref Click</button>
@@ -13,6 +14,7 @@
 <script>
 import Student from './Student.vue'
 import Teacher from './Teacher.vue'
+import SimpleForm from './SimpleForm.vue'
 export default {
   name: 'HelloWorld',
   props: {
@@ -29,7 +31,8 @@ export default {
   },
   components:{
         Student,
-        Teacher
+        Teacher,
+        SimpleForm
   }
 }
 </script>
