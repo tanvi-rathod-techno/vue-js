@@ -8,6 +8,10 @@ export default{
     props:{
         name:String
     }
-
 }
 </script>
+<style>
+  h1 {
+   color:orange
+  }
+</style>
